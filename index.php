@@ -22,7 +22,7 @@ require_once __DIR__ . '/facebook-php-sdk/src/facebook.php';
 // Create our Application instance (replace this with your appId and secret).
 $facebook = new Facebook(array(
   'appId'  => '179462308770264',
-  'secret' => '6c8c269f11d93dc133c59de167f98e34',
+  'secret' => '7edb6a7e2bf817085cd11c130f0e6eac',
   'cookie' => true,
 ));
 
@@ -60,7 +60,7 @@ $naitik = $facebook->api('/naitik');
 <!doctype html>
 <html xmlns:fb="http://www.facebook.com/2008/fbml">
   <head>
-    <title>php-sdk</title>
+    <title>Orchestra.io Facebook Application</title>
     <style>
       body {
         font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
@@ -75,6 +75,9 @@ $naitik = $facebook->api('/naitik');
     </style>
   </head>
   <body>
+    <h2>Seriously, how easy was that?!</h2>
+      <p>This is just a simple facebook app, deployed from an <a href="https://github.com/orchestra-io/facebook-example">example facebook app on GitHub</a> and a <strong>master</strong> branch to show you how  you can be quickly up and running.</p>
+
     <!--
       We use the JS SDK to provide a richer user experience. For more info,
       look here: http://github.com/facebook/connect-js
@@ -136,9 +139,5 @@ $naitik = $facebook->api('/naitik');
     <?php else: ?>
     <strong><em>You are not Connected.</em></strong>
     <?php endif ?>
-
-    <h3>Naitik</h3>
-    <img src="https://graph.facebook.com/naitik/picture">
-    <?php echo $naitik['name']; ?>
   </body>
 </html>
