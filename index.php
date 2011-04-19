@@ -75,6 +75,7 @@ $naitik = $facebook->api('/naitik');
     </style>
   </head>
   <body>
+    <img src="/images/logo.png" />
     <h2>Seriously, how easy was that?!</h2>
       <p>This is just a simple facebook app, deployed from an <a href="https://github.com/orchestra-io/facebook-example">example facebook app on GitHub</a> and a <strong>master</strong> branch to show you how  you can be quickly up and running.</p>
 
@@ -106,9 +107,6 @@ $naitik = $facebook->api('/naitik');
         document.getElementById('fb-root').appendChild(e);
       }());
     </script>
-
-
-    <h1><a href="example.php">php-sdk</a></h1>
 
     <?php if ($me): ?>
     <a href="<?php echo $logoutUrl; ?>">
